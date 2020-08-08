@@ -4,15 +4,13 @@ const emailjs = require('emailjs-com')
 
 const submitForm = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('gmail', 'my_template', 'contact-form', 'user_DsTNcSttwpijHS0eq0aVx')
+    emailjs.sendForm('suraj_ojha', 'template_changed', 'contact-form', 'user_EG4VqNgwLQYFWhLe81dxx')
      .then(res => alert('Your message has been sent . I will be in contact with you soon. Thank you!'))
      .catch(err => alert('Oops! Something went wront. Try again!'))
 }
-// emailjs.sendForm()
 
 
-document.querySelector('.submitButton').addEventListener('click', submitForm)
+document.getElementById('submitButton').onclick = submitForm
 },{"emailjs-com":2}],2:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
